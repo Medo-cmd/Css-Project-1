@@ -1,0 +1,199 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
+*{
+  margin: 0;
+  padding: 0;
+   -webkit-box-sizing: border-box;
+           box-sizing: border-box;
+}
+body{
+background-color:black;
+}
+
+/* Style the navigation bar */
+.navbar{
+position:absolute;
+top: 0px;
+  width: 100%;
+  overflow: auto;
+}
+   /* Style the logo in the  navigation bar */
+.navbar  img{
+  width: 10%;
+    margin: 10px;
+    height: auto;
+    
+}
+
+
+
+/* Navbar links */
+.navbar a{
+  float: right;
+  text-align: center;
+  padding: 16px;
+  color: rgb(207, 204, 204);
+  text-decoration: none;
+  font-size: 17px;
+  margin-right: 60px;
+ 
+}
+
+/* Navbar links on mouse-over */
+.navbar a:hover {
+  background-color: rgb(48, 44, 44);
+  -webkit-transition:1s;
+  -o-transition:1s;
+  transition:1s;
+}
+
+
+
+/* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 600 pixels */
+@media screen and (max-width: 600px) {
+  .navbar a {
+    float: none;
+    display: block;
+    
+  }
+} 
+
+
+
+
+
+
+/*Page Content style*/
+ .content h1{
+   position: relative;
+   top: 0px auto;
+   text-align: center;
+   font-family: 'Josefin Sans', sans-serif;
+   color: coral;
+
+
+
+ }
+ .content h3{
+  font-family: 'Indie Flower', cursive;
+  font-size: 24px;
+  color: rgb(141, 140, 140);
+ }
+
+ 
+.homepage img{
+  width: 100%;
+  height:50vh;
+
+} 
+.grid-container{
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+  grid-template-columns: auto auto;
+  padding: 50px;
+  margin-left: 30px;
+}
+.grid-item{
+  width:50%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+
+}
+
+
+.grid-item img{
+  height: auto;
+  max-width: 100%;
+}
+.grid-item p{
+  font-family: 'Fredericka the Great', cursive;
+  color: steelblue;
+}
+
+
+
+
+/*footer styling*/
+.flex-container{
+ 
+ display: -webkit-box;
+ 
+ display: -ms-flexbox;
+ 
+ display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row;
+ background-color: rgb(201, 192, 192);
+ height:auto;
+
+}
+ 
+@media screen and (max-width: 600px) {
+  .flex-container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.flex-container > div{
+ 
+ margin: 10px;
+ padding: 70px;
+ font-size: 20px;
+
+}
+
+.item1  ul{
+ list-style: none;
+}
+
+.item1  ul li a{
+ list-style: none;
+ line-height: 30px;
+ text-decoration: none;
+ font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+color:rgba(83, 66, 43, 0.404);
+}
+
+
+.item2  ul{
+list-style: none;
+}
+.item2  ul li a{
+line-height: 30px;
+text-decoration: none;
+font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+color:rgba(83, 66, 43, 0.404);
+}
+.item3  ul{
+list-style: none;
+}
+.item3  ul li a{
+line-height: 30px;
+text-decoration: none;
+font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+color:rgba(83, 66, 43, 0.404);
+}
+.item4  ul{
+list-style: none;
+}
+.item4  ul li a{
+line-height: 30px;
+text-decoration: none;
+font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+color:rgba(83, 66, 43, 0.404);
+} 
+ul li a:hover{
+background-color: rgb(43, 71, 71);
+color: antiquewhite;
+}
+
+.item4 img{
+width: 10%;
+margin-top: 20px;
+}
