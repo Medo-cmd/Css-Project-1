@@ -5,6 +5,8 @@
 * Browsers: last 4 version
 */
 
+
+
 *{
   margin: 0;
   padding: 0;
@@ -319,8 +321,8 @@ input ,textarea{
     -o-transition: 0.5s;
     transition: 0.5s;
     display: block;
-    background-image: -webkit-gradient(linear, left top, right top, from(#FC354C), color-stop(51%, #0ABFBC), to(#FC354C));
     background-image: -o-linear-gradient(left, #FC354C 0%, #0ABFBC  51%, #FC354C  100%);
+    background-image: -webkit-gradient(linear, left top, right top, from(#FC354C), color-stop(51%, #0ABFBC), to(#FC354C));
     background-image: linear-gradient(to right, #FC354C 0%, #0ABFBC  51%, #FC354C  100%)
 } 
 [value=submit]:hover{
@@ -380,7 +382,6 @@ input ,textarea{
    
   }
 }
-
 
 
 
