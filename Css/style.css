@@ -15,12 +15,20 @@ body{
 background-color:black;
 }
 
+.container{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column;
+
+}
+
 /* Style the navigation bar */
 .navbar{
 position:absolute;
 top: 0px;
   width: 100%;
   overflow: auto;
+  z-index: 500;
 }
    /* Style the logo in the  navigation bar */
 .navbar  img{
@@ -52,6 +60,10 @@ top: 0px;
   transition:1s;
 }
 
+.active{
+  background-color: rgb(48, 44, 44);
+}
+
 
 
 /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 600 pixels */
@@ -59,6 +71,7 @@ top: 0px;
   .navbar a {
     float: none;
     display: block;
+    margin-top: 0px;
     
   }
 } 
@@ -194,6 +207,151 @@ color: antiquewhite;
 }
 
 .item4 img{
-width: 10%;
+width: 40%;
 margin-top: 20px;
 }
+
+/***********************************************************************/
+
+
+/*styling Contact-form page   */
+
+
+
+  
+  
+form{
+  position: relative;
+  left: 50%;
+  -webkit-transform: translate(-50%,30%);
+      -ms-transform: translate(-50%,30%);
+          transform: translate(-50%,30%);
+  width: 800px;
+  height: 500px;
+  background: rgba(94, 93, 93, 0.651);
+  border-radius: 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-bottom: 300px;
+  z-index: 100;
+} 
+form img{
+  width: 25%;
+  height: auto;
+  position: absolute;
+  bottom: 0;
+  left: 15px;
+}
+.leftbox ul{
+  list-style: none;
+}
+.leftbox li{
+  padding: 15px; 
+  color: white;
+}
+.leftbox{ 
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 25%;
+  padding: 15px;
+  display: inline-block;
+ 
+}
+
+.rightbox{
+
+  position: relative;
+  top:20px;
+  left: 200px;
+  width: 75%;
+  padding: 15px; 
+}
+input ,textarea{
+  padding: 15px;
+  width: 500px;
+  background-color: rgba(253, 252, 252, 0.479);
+  border: none;
+  outline: none;
+  color: white;
+}
+
+::-webkit-input-placeholder{
+  color: rgb(248, 226, 226);
+}
+
+::-moz-placeholder{
+  color: rgb(248, 226, 226);
+}
+
+:-ms-input-placeholder{
+  color: rgb(248, 226, 226);
+}
+
+::-ms-input-placeholder{
+  color: rgb(248, 226, 226);
+}
+
+::placeholder{
+  color: rgb(248, 226, 226);
+} 
+
+[value=submit]{
+  position: absolute;
+  top: 350px;
+  left: 390px;
+  width: 130px;
+  height: 35px;
+  
+  color: white;
+  border: none;
+  outline: none;
+  border-radius: 15px;
+  font-size: 20px;
+  padding: 0px;
+  -webkit-box-shadow: 0 0 20px #eee;
+          box-shadow: 0 0 20px #eee;
+  background-size: 200% auto;
+   text-transform: uppercase;
+    text-align: center;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    display: block;
+    background-image: -webkit-gradient(linear, left top, right top, from(#FC354C), color-stop(51%, #0ABFBC), to(#FC354C));
+    background-image: -o-linear-gradient(left, #FC354C 0%, #0ABFBC  51%, #FC354C  100%);
+    background-image: linear-gradient(to right, #FC354C 0%, #0ABFBC  51%, #FC354C  100%)
+} 
+[value=submit]:hover{
+  background-color: white;
+   background-position: right center; /* change the direction of the change here */
+    text-decoration: none;
+}
+
+@media screen and (max-width: 600px) {
+  .leftbox ,.rightbox{
+    width: 100%;
+    margin-top: 100px;
+  }
+}
+/*----------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
